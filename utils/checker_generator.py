@@ -16,11 +16,12 @@ def create_checkered_pdf_with_margins(output_filename, box_size_mm=18, margin_cm
     color1 = colors.HexColor('#8B0000')  # Dark red (H~0)
     color2 = colors.HexColor('#00008B')  # Dark blue (H~240)
     
-    # --- Corner marker colors (all different, easy to distinguish) ---
-    top_left_color = colors.HexColor('#FFD700')  # Gold/Yellow
-    top_right_color = colors.HexColor('#00FF00')  # Bright green
+    # --- Corner marker colors (only cyan and magenta) ---
+    # Diagonals have DIFFERENT colors for symmetrical differentiation
+    top_left_color = colors.HexColor('#00FFFF')  # Cyan
+    top_right_color = colors.HexColor('#00FFFF')  # Cyan
     bottom_left_color = colors.HexColor('#FF00FF')  # Magenta
-    bottom_right_color = colors.HexColor('#00FFFF')  # Cyan
+    bottom_right_color = colors.HexColor('#FF00FF')  # Magenta
     # ---
     
     # Get the dimensions of an A4 page
