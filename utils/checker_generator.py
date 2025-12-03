@@ -13,15 +13,15 @@ def create_checkered_pdf_with_margins(output_filename, box_size_mm=18, margin_cm
     
     # --- Checkered pattern colors (high contrast to white for easy masking) ---
     # Using distinct hues for easy HSV segmentation
-    color1 = colors.HexColor('#8B0000')  # Dark red (H~0)
+    color1 = colors.HexColor("#A21A1A")  # Dark red (H~0)
     color2 = colors.HexColor('#00008B')  # Dark blue (H~240)
     
     # --- Corner marker colors (only cyan and magenta) ---
     # Diagonals have DIFFERENT colors for symmetrical differentiation
-    top_left_color = colors.HexColor('#00FFFF')  # Cyan
+    top_left_color = colors.HexColor('#FF00FF')  # Cyan
     top_right_color = colors.HexColor('#00FFFF')  # Cyan
     bottom_left_color = colors.HexColor('#FF00FF')  # Magenta
-    bottom_right_color = colors.HexColor('#FF00FF')  # Magenta
+    bottom_right_color = colors.HexColor('#00FFFF')  # Magenta
     # ---
     
     # Get the dimensions of an A4 page
